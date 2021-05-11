@@ -6,15 +6,15 @@ public class Department implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	private Integer id;
-	private String nome;
+	private String name;
 	
 	public Department() {
 		
 	}
 
-	public Department(Integer id, String nome) {
+	public Department(Integer id, String name) {
 		this.id = id;
-		this.nome = nome;
+		this.name = name;
 	}
 
 	public Integer getId() {
@@ -25,12 +25,12 @@ public class Department implements Serializable {
 		this.id = id;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override
@@ -60,7 +60,7 @@ public class Department implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Department [id=" + id + ", nome=" + nome + "]";
+		return "Department [id=" + id + ", name=" + name + "]";
 	}
 	
 	
